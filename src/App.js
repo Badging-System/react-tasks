@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./NavBar";
 import Form from "./Form";
 // import FormResults from "./FormResults";
+import task1 from "./task1";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -16,7 +17,9 @@ class App extends React.Component {
           {/* <Route
             path='/results'
             render={props => <FormResults items={props} {...props} />}
-          ></Route> */}
+          ></Route> */
+          }
+          <Route path  = '/task1' component = {Task1} />
         </Switch>
       </Router>
     );
