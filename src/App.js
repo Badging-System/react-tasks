@@ -19,7 +19,8 @@ class App extends React.Component {
             render={props => <FormResults items={props} {...props} />}
           ></Route> */
           }
-          <Route path  = '/task1' component = {Task1} />
+          {/*This routes the task1 function that I created to app I believe*/} 
+          <Route path='/task1' component ={task1} />
         </Switch>
       </Router>
     );
