@@ -2,6 +2,9 @@ import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import Task1Icon from "@material-ui/icons/Accessible"; //Found icon name and imported it
+//import button from website
+//add button to return
+//this.props.counter
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 
