@@ -7,10 +7,29 @@ import task1 from "./task1";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
+  //Copied from FOrm.js
+  //json can call another json
+  //Think of state as a tbale
+  //You have to use setState to change anything in state (only way to do it)
+  constructor(props) {
+    super(props);
+    this.state = {
+      //firstName: "",
+      //lastName: ""
+      number : 0 
+    };
+    //this.handleChange = this.handleChange.bind(this);
+  }
+  counter() { 
+    var x = this.state.number;
+    //Remember how this.setState
+    this.setState({number : x + 1})
+  }; 
   render() {
     return (
       <Router>
-        <NavBar />
+        <h1> {this.state.number} </h1>
+        <NavBar props = {this.counter}/>
         <Switch>
           <Route exact path='/' component={HomeText} />
           <Route path='/form' component={Form} />
