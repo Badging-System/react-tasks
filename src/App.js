@@ -16,9 +16,10 @@ class App extends React.Component {
     this.state = {
       //firstName: "",
       //lastName: ""
-      number : 0 
+      number : 0
     };
     //this.handleChange = this.handleChange.bind(this);
+    this.counter = this.counter.bind(this);
   }
   counter() { 
     var x = this.state.number;

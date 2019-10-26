@@ -25,7 +25,7 @@ class NavBar extends React.Component {
         <Link to = '/task1'>
           <Task1Icon />
         </Link>
-        <button onClick = {this.props.counter}>
+        <button onClick = {this.props.props}>
           <Task2AIcon />
         </button>
       </div>
