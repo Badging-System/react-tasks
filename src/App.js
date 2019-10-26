@@ -34,12 +34,11 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomeText} />
           <Route path='/form' component={Form} />
-          {/* <Route
+          <Route
             path='/results'
             render={props => <FormResults items={props} {...props} />}
-          ></Route> */
-          }
-          {/*This routes the task1 function that I created to app I believe*/} 
+          ></Route>
+          
           <Route path='/task1' component ={task1} />
         </Switch>
       </Router>
