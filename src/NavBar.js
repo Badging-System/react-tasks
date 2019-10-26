@@ -5,6 +5,7 @@ import Task1Icon from "@material-ui/icons/Accessible"; //Found icon name and imp
 //import button from website
 //add button to return
 //this.props.counter
+import Task2AIcon from "@material-ui/icons/Build";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 
@@ -24,6 +25,9 @@ class NavBar extends React.Component {
         <Link to = '/task1'>
           <Task1Icon />
         </Link>
+        <button onClick = {this.props.counter}>
+          <Task2AIcon />
+        </button>
       </div>
     );
   }
