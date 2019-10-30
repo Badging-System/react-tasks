@@ -1,4 +1,7 @@
 import React from "react";
+import { ListItemSecondaryAction } from "@material-ui/core";
 export default function FormResults(props) {
-  return <p>todo for task 2</p>;
+console.log(props);
+var values = props.location.state;
+return <p> {values.firstName} {values.lastName} </p>;
 }
